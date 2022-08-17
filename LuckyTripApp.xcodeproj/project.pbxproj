@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A706987828ACE6C800EA3FD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A706987728ACE6C800EA3FD1 /* AppDelegate.swift */; };
+		A706987C28ACE6C800EA3FD1 /* DestinationsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A706987B28ACE6C800EA3FD1 /* DestinationsListViewController.swift */; };
+		A706987F28ACE6C800EA3FD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A706987D28ACE6C800EA3FD1 /* Main.storyboard */; };
+		A706988128ACE6C900EA3FD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A706988028ACE6C900EA3FD1 /* Assets.xcassets */; };
+		A706988428ACE6C900EA3FD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A706988228ACE6C900EA3FD1 /* LaunchScreen.storyboard */; };
+		A706989528ACEA1500EA3FD1 /* DestinationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A706989328ACEA1500EA3FD1 /* DestinationCell.swift */; };
+		A706989628ACEA1500EA3FD1 /* DestinationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A706989428ACEA1500EA3FD1 /* DestinationCell.xib */; };
+		A706989A28ACECF500EA3FD1 /* LocationHorizontalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A706989828ACECF500EA3FD1 /* LocationHorizontalCell.swift */; };
+		A706989B28ACECF500EA3FD1 /* LocationHorizontalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A706989928ACECF500EA3FD1 /* LocationHorizontalCell.xib */; };
+		A706989F28ACF1C400EA3FD1 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A706989E28ACF1C400EA3FD1 /* Networking.swift */; };
+		A768125328ACF546001E6053 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768125228ACF546001E6053 /* Result.swift */; };
+		A768125628ACF673001E6053 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768125528ACF673001E6053 /* BaseRequest.swift */; };
+		A768125928ACF731001E6053 /* DestinationsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768125828ACF731001E6053 /* DestinationsRequest.swift */; };
+		A768125D28ACF8E6001E6053 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768125C28ACF8E6001E6053 /* Configuration.swift */; };
+		A768126228ACFC36001E6053 /* CodableRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768126128ACFC36001E6053 /* CodableRequest.swift */; };
+		A768126428ACFD45001E6053 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768126328ACFD45001E6053 /* Decoder.swift */; };
+		A768126628ACFD6A001E6053 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768126528ACFD6A001E6053 /* NetworkError.swift */; };
+		A768126928ACFEB8001E6053 /* DestinationsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768126828ACFEB8001E6053 /* DestinationsListViewModel.swift */; };
+		A768126C28ACFEF1001E6053 /* DestinationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768126B28ACFEF1001E6053 /* DestinationModel.swift */; };
+		A768126E28AD00A6001E6053 /* StateChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768126D28AD00A6001E6053 /* StateChange.swift */; };
+		A768127028AD2579001E6053 /* Extension+UIimageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768126F28AD2579001E6053 /* Extension+UIimageView.swift */; };
+		A768127228AD3957001E6053 /* ObjectSavableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768127128AD3957001E6053 /* ObjectSavableError.swift */; };
+		A768127428AD3969001E6053 /* Extension+UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768127328AD3969001E6053 /* Extension+UserDefaults.swift */; };
+		A768127728AD3B49001E6053 /* SavedDestinationsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768127628AD3B49001E6053 /* SavedDestinationsListViewController.swift */; };
+		D5D9DFBF508F806C6ED60E6B /* Pods_LuckyTripApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8093C73AC89B541DA36E11F /* Pods_LuckyTripApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A1C3788B85CEE8C8EEEB740D /* Pods-LuckyTripApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckyTripApp.debug.xcconfig"; path = "Target Support Files/Pods-LuckyTripApp/Pods-LuckyTripApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A706987428ACE6C800EA3FD1 /* LuckyTripApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuckyTripApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A706987728ACE6C800EA3FD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A706987B28ACE6C800EA3FD1 /* DestinationsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationsListViewController.swift; sourceTree = "<group>"; };
+		A706987E28ACE6C800EA3FD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A706988028ACE6C900EA3FD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A706988328ACE6C900EA3FD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A706988528ACE6C900EA3FD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A706989328ACEA1500EA3FD1 /* DestinationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationCell.swift; sourceTree = "<group>"; };
+		A706989428ACEA1500EA3FD1 /* DestinationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DestinationCell.xib; sourceTree = "<group>"; };
+		A706989828ACECF500EA3FD1 /* LocationHorizontalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHorizontalCell.swift; sourceTree = "<group>"; };
+		A706989928ACECF500EA3FD1 /* LocationHorizontalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationHorizontalCell.xib; sourceTree = "<group>"; };
+		A706989E28ACF1C400EA3FD1 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		A768125228ACF546001E6053 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		A768125528ACF673001E6053 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		A768125828ACF731001E6053 /* DestinationsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationsRequest.swift; sourceTree = "<group>"; };
+		A768125C28ACF8E6001E6053 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		A768126128ACFC36001E6053 /* CodableRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableRequest.swift; sourceTree = "<group>"; };
+		A768126328ACFD45001E6053 /* Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
+		A768126528ACFD6A001E6053 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		A768126828ACFEB8001E6053 /* DestinationsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationsListViewModel.swift; sourceTree = "<group>"; };
+		A768126B28ACFEF1001E6053 /* DestinationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationModel.swift; sourceTree = "<group>"; };
+		A768126D28AD00A6001E6053 /* StateChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateChange.swift; sourceTree = "<group>"; };
+		A768126F28AD2579001E6053 /* Extension+UIimageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIimageView.swift"; sourceTree = "<group>"; };
+		A768127128AD3957001E6053 /* ObjectSavableError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectSavableError.swift; sourceTree = "<group>"; };
+		A768127328AD3969001E6053 /* Extension+UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UserDefaults.swift"; sourceTree = "<group>"; };
+		A768127628AD3B49001E6053 /* SavedDestinationsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedDestinationsListViewController.swift; sourceTree = "<group>"; };
+		D4726BAE3FB44C1CD8AA246C /* Pods-LuckyTripApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckyTripApp.release.xcconfig"; path = "Target Support Files/Pods-LuckyTripApp/Pods-LuckyTripApp.release.xcconfig"; sourceTree = "<group>"; };
+		F8093C73AC89B541DA36E11F /* Pods_LuckyTripApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LuckyTripApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A706987128ACE6C800EA3FD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5D9DFBF508F806C6ED60E6B /* Pods_LuckyTripApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CC723CB973C40F9D8DFA199 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A1C3788B85CEE8C8EEEB740D /* Pods-LuckyTripApp.debug.xcconfig */,
+				D4726BAE3FB44C1CD8AA246C /* Pods-LuckyTripApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		63D3E6AD05F124CEDF436C0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8093C73AC89B541DA36E11F /* Pods_LuckyTripApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A706986B28ACE6C700EA3FD1 = {
+			isa = PBXGroup;
+			children = (
+				A706987628ACE6C800EA3FD1 /* LuckyTripApp */,
+				A706987528ACE6C800EA3FD1 /* Products */,
+				2CC723CB973C40F9D8DFA199 /* Pods */,
+				63D3E6AD05F124CEDF436C0A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A706987528ACE6C800EA3FD1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A706987428ACE6C800EA3FD1 /* LuckyTripApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A706987628ACE6C800EA3FD1 /* LuckyTripApp */ = {
+			isa = PBXGroup;
+			children = (
+				A768125B28ACF8D0001E6053 /* Helpers */,
+				A768125428ACF609001E6053 /* Models */,
+				A706989C28ACF15B00EA3FD1 /* Managers */,
+				A706989028ACE77400EA3FD1 /* Storyboard */,
+				A706988E28ACE6E700EA3FD1 /* Assets */,
+				A706988D28ACE6E000EA3FD1 /* Scenes */,
+				A706988C28ACE6DB00EA3FD1 /* Support */,
+				A706988B28ACE6D400EA3FD1 /* Application */,
+			);
+			path = LuckyTripApp;
+			sourceTree = "<group>";
+		};
+		A706988B28ACE6D400EA3FD1 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A706987728ACE6C800EA3FD1 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A706988C28ACE6DB00EA3FD1 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				A706988528ACE6C900EA3FD1 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		A706988D28ACE6E000EA3FD1 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				A768127528AD3B23001E6053 /* SavedDestinationList */,
+				A706988F28ACE75C00EA3FD1 /* DestinationsList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		A706988E28ACE6E700EA3FD1 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				A706988028ACE6C900EA3FD1 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		A706988F28ACE75C00EA3FD1 /* DestinationsList */ = {
+			isa = PBXGroup;
+			children = (
+				A768126A28ACFEBC001E6053 /* DestinationsListViewController */,
+				A768126728ACFEA5001E6053 /* DestinationsListViewModel */,
+				A706989728ACEC9300EA3FD1 /* LocationHorizontalCell */,
+				A706989228ACE9EC00EA3FD1 /* DestinationCell */,
+			);
+			path = DestinationsList;
+			sourceTree = "<group>";
+		};
+		A706989028ACE77400EA3FD1 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A706988228ACE6C900EA3FD1 /* LaunchScreen.storyboard */,
+				A706987D28ACE6C800EA3FD1 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		A706989228ACE9EC00EA3FD1 /* DestinationCell */ = {
+			isa = PBXGroup;
+			children = (
+				A706989328ACEA1500EA3FD1 /* DestinationCell.swift */,
+				A706989428ACEA1500EA3FD1 /* DestinationCell.xib */,
+			);
+			path = DestinationCell;
+			sourceTree = "<group>";
+		};
+		A706989728ACEC9300EA3FD1 /* LocationHorizontalCell */ = {
+			isa = PBXGroup;
+			children = (
+				A706989828ACECF500EA3FD1 /* LocationHorizontalCell.swift */,
+				A706989928ACECF500EA3FD1 /* LocationHorizontalCell.xib */,
+			);
+			path = LocationHorizontalCell;
+			sourceTree = "<group>";
+		};
+		A706989C28ACF15B00EA3FD1 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A706989D28ACF17E00EA3FD1 /* NetworkManager */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		A706989D28ACF17E00EA3FD1 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				A768125728ACF71D001E6053 /* Requests */,
+				A768125228ACF546001E6053 /* Result.swift */,
+				A706989E28ACF1C400EA3FD1 /* Networking.swift */,
+				A768125528ACF673001E6053 /* BaseRequest.swift */,
+				A768126128ACFC36001E6053 /* CodableRequest.swift */,
+				A768126328ACFD45001E6053 /* Decoder.swift */,
+				A768126528ACFD6A001E6053 /* NetworkError.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		A768125428ACF609001E6053 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A768126B28ACFEF1001E6053 /* DestinationModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A768125728ACF71D001E6053 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				A768125828ACF731001E6053 /* DestinationsRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		A768125B28ACF8D0001E6053 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A768126D28AD00A6001E6053 /* StateChange.swift */,
+				A768125C28ACF8E6001E6053 /* Configuration.swift */,
+				A768126F28AD2579001E6053 /* Extension+UIimageView.swift */,
+				A768127128AD3957001E6053 /* ObjectSavableError.swift */,
+				A768127328AD3969001E6053 /* Extension+UserDefaults.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A768126728ACFEA5001E6053 /* DestinationsListViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A768126828ACFEB8001E6053 /* DestinationsListViewModel.swift */,
+			);
+			path = DestinationsListViewModel;
+			sourceTree = "<group>";
+		};
+		A768126A28ACFEBC001E6053 /* DestinationsListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A706987B28ACE6C800EA3FD1 /* DestinationsListViewController.swift */,
+			);
+			path = DestinationsListViewController;
+			sourceTree = "<group>";
+		};
+		A768127528AD3B23001E6053 /* SavedDestinationList */ = {
+			isa = PBXGroup;
+			children = (
+				A768127628AD3B49001E6053 /* SavedDestinationsListViewController.swift */,
+			);
+			path = SavedDestinationList;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A706987328ACE6C800EA3FD1 /* LuckyTripApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A706988828ACE6C900EA3FD1 /* Build configuration list for PBXNativeTarget "LuckyTripApp" */;
+			buildPhases = (
+				9415AD0B9ECAA027930C05FA /* [CP] Check Pods Manifest.lock */,
+				A706987028ACE6C800EA3FD1 /* Sources */,
+				A706987128ACE6C800EA3FD1 /* Frameworks */,
+				A706987228ACE6C800EA3FD1 /* Resources */,
+				F8181570CCF099C0B0B61FCC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LuckyTripApp;
+			productName = LuckyTripApp;
+			productReference = A706987428ACE6C800EA3FD1 /* LuckyTripApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A706986C28ACE6C700EA3FD1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					A706987328ACE6C800EA3FD1 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = A706986F28ACE6C700EA3FD1 /* Build configuration list for PBXProject "LuckyTripApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A706986B28ACE6C700EA3FD1;
+			productRefGroup = A706987528ACE6C800EA3FD1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A706987328ACE6C800EA3FD1 /* LuckyTripApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A706987228ACE6C800EA3FD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A706988428ACE6C900EA3FD1 /* LaunchScreen.storyboard in Resources */,
+				A706989B28ACECF500EA3FD1 /* LocationHorizontalCell.xib in Resources */,
+				A706988128ACE6C900EA3FD1 /* Assets.xcassets in Resources */,
+				A706989628ACEA1500EA3FD1 /* DestinationCell.xib in Resources */,
+				A706987F28ACE6C800EA3FD1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9415AD0B9ECAA027930C05FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LuckyTripApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8181570CCF099C0B0B61FCC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LuckyTripApp/Pods-LuckyTripApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LuckyTripApp/Pods-LuckyTripApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LuckyTripApp/Pods-LuckyTripApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A706987028ACE6C800EA3FD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A768125928ACF731001E6053 /* DestinationsRequest.swift in Sources */,
+				A768125328ACF546001E6053 /* Result.swift in Sources */,
+				A768126E28AD00A6001E6053 /* StateChange.swift in Sources */,
+				A706989528ACEA1500EA3FD1 /* DestinationCell.swift in Sources */,
+				A768125D28ACF8E6001E6053 /* Configuration.swift in Sources */,
+				A768127028AD2579001E6053 /* Extension+UIimageView.swift in Sources */,
+				A706989F28ACF1C400EA3FD1 /* Networking.swift in Sources */,
+				A768127428AD3969001E6053 /* Extension+UserDefaults.swift in Sources */,
+				A768126228ACFC36001E6053 /* CodableRequest.swift in Sources */,
+				A768126C28ACFEF1001E6053 /* DestinationModel.swift in Sources */,
+				A768125628ACF673001E6053 /* BaseRequest.swift in Sources */,
+				A768126428ACFD45001E6053 /* Decoder.swift in Sources */,
+				A706987C28ACE6C800EA3FD1 /* DestinationsListViewController.swift in Sources */,
+				A768126628ACFD6A001E6053 /* NetworkError.swift in Sources */,
+				A768126928ACFEB8001E6053 /* DestinationsListViewModel.swift in Sources */,
+				A768127228AD3957001E6053 /* ObjectSavableError.swift in Sources */,
+				A768127728AD3B49001E6053 /* SavedDestinationsListViewController.swift in Sources */,
+				A706989A28ACECF500EA3FD1 /* LocationHorizontalCell.swift in Sources */,
+				A706987828ACE6C800EA3FD1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A706987D28ACE6C800EA3FD1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A706987E28ACE6C800EA3FD1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A706988228ACE6C900EA3FD1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A706988328ACE6C900EA3FD1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A706988628ACE6C900EA3FD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A706988728ACE6C900EA3FD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A706988928ACE6C900EA3FD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1C3788B85CEE8C8EEEB740D /* Pods-LuckyTripApp.debug.xcconfig */;
+			buildSettings = {
+				API_URL = "https://devapi.luckytrip.co.uk/api/2.0/test/";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 762ZWSQZR7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LuckyTripApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AhmadSallam.LuckyTripApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A706988A28ACE6C900EA3FD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4726BAE3FB44C1CD8AA246C /* Pods-LuckyTripApp.release.xcconfig */;
+			buildSettings = {
+				API_URL = "https://devapi.luckytrip.co.uk/api/2.0/test/";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 762ZWSQZR7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LuckyTripApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AhmadSallam.LuckyTripApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A706986F28ACE6C700EA3FD1 /* Build configuration list for PBXProject "LuckyTripApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A706988628ACE6C900EA3FD1 /* Debug */,
+				A706988728ACE6C900EA3FD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A706988828ACE6C900EA3FD1 /* Build configuration list for PBXNativeTarget "LuckyTripApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A706988928ACE6C900EA3FD1 /* Debug */,
+				A706988A28ACE6C900EA3FD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A706986C28ACE6C700EA3FD1 /* Project object */;
+}

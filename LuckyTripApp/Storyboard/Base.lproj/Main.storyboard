@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DIv-8t-g6V">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Destinations List-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="DestinationsListViewController" id="BYZ-38-t0r" customClass="DestinationsListViewController" customModule="LuckyTripApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="28S-dQ-lV1">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XCC-f5-wjM">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJh-ms-1IQ">
+                                <rect key="frame" x="263" y="753" width="135" height="40"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Aso-Jy-GHa"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.down" catalog="system" title="Save Location">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="saveLocationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C1M-0P-I6b"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="28S-dQ-lV1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4pB-87-QOX"/>
+                            <constraint firstItem="28S-dQ-lV1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8NM-Gm-Rr1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fJh-ms-1IQ" secondAttribute="bottom" constant="20" id="E05-bk-R7G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="28S-dQ-lV1" secondAttribute="bottom" id="ELb-18-1Mb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="28S-dQ-lV1" secondAttribute="trailing" id="XsN-fB-zEv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fJh-ms-1IQ" secondAttribute="trailing" constant="16" id="u0m-9m-ea5"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Destinations List" image="location.viewfinder" catalog="system" id="FNo-aI-2kL"/>
+                    <connections>
+                        <outlet property="destinationsListCollectionView" destination="28S-dQ-lV1" id="iDB-zN-ury"/>
+                        <outlet property="saveLocationButton" destination="fJh-ms-1IQ" id="NhD-gK-7aF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="568" y="98"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ukn-zj-xJv">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="DIv-8t-g6V" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mpT-L4-K14">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="1zB-rX-sa0"/>
+                        <segue destination="i6K-bW-ZVq" kind="relationship" relationship="viewControllers" id="PXW-e5-loo"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gs2-kr-1Ai" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-367" y="98"/>
+        </scene>
+        <!--Destinations Selected-->
+        <scene sceneID="pBW-Hf-Oya">
+            <objects>
+                <viewController id="i6K-bW-ZVq" customClass="SavedDestinationsListViewController" customModule="LuckyTripApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cQa-wj-9gd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WWb-my-ASW">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bH0-IS-j5M">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NWG-Wx-tHH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WWb-my-ASW" firstAttribute="leading" secondItem="NWG-Wx-tHH" secondAttribute="leading" id="2hR-KS-dkn"/>
+                            <constraint firstAttribute="trailing" secondItem="WWb-my-ASW" secondAttribute="trailing" id="8KM-FZ-GIx"/>
+                            <constraint firstItem="WWb-my-ASW" firstAttribute="top" secondItem="cQa-wj-9gd" secondAttribute="top" id="ILu-iq-cic"/>
+                            <constraint firstItem="NWG-Wx-tHH" firstAttribute="bottom" secondItem="WWb-my-ASW" secondAttribute="bottom" id="hiq-Bz-XFy"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Destinations Selected" image="location.fill" catalog="system" id="Rom-Oq-KQX"/>
+                    <connections>
+                        <outlet property="savedSelectedCollection" destination="WWb-my-ASW" id="5Mq-CU-rbz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3vA-iO-SB6" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="180" y="824"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="location.fill" catalog="system" width="128" height="121"/>
+        <image name="location.viewfinder" catalog="system" width="128" height="115"/>
+        <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
